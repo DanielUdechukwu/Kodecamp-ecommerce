@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.clamp {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.clamper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
