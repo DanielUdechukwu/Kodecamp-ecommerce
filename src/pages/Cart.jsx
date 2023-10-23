@@ -48,7 +48,7 @@ const Cart = () => {
   }
 
   return(
-    <div className="font-Inter">
+    <div className="font-Inter h-screen">
       <h2 className="text-3xl font-bold mt-8 mb-2 md:mb-5 px-4 lg:mb-8 xl:w-[90%] xl:mx-auto">Shopping Cart</h2>
 
       <div className="lg:flex lg:gap-4 lg:px-4 xl:w-[90%] xl:mx-auto">
@@ -60,17 +60,17 @@ const Cart = () => {
 
               return (
                 <div key={id} className="px-2 flex items-center gap-5 relative mb-3 lg:border-t lg:py-2">
-                  <img className="absolute top-6 right-6 h-8 cursor-pointer" src={Del} alt="" onClick={() => DeleteCartItem(id)} />
-                  <div className="w-[7rem] h-[7rem]">
+                  <img className="absolute lg:top-6 lg:right-6 top-2 right-2 h-8 cursor-pointer" src={Del} alt="" onClick={() => DeleteCartItem(id)} />
+                  <div className="lg:w-[7rem] lg:h-[7rem] w-[4rem] h-[4rem]">
                     <img src={image} alt="" />
                   </div>
                   <div className="flex flex-col justify-between xl:w-[80%]">
                     <div className="py-4">
-                      <p className="text-md font-medium">{title}</p>
+                      <p className="lg:text-md text-sm font-medium">{title}</p>
                       <div className="flex gap-3 mt-1 mb-2">
-                        <p className="text-sm text-gray-500 font-medium">{category}</p>
+                        <p className="lg:text-sm text-[.75rem] text-gray-500 font-medium">{category}</p>
                         <div className="border-r-2 border-gray-400"></div>
-                        <p className="text-sm text-gray-500 font-medium">Size</p>
+                        <p className="lg:text-sm text-[.75rem] text-gray-500 font-medium">Size</p>
                       </div>
                       <p className="text-sm font-semibold">${price}</p>
 
@@ -82,8 +82,8 @@ const Cart = () => {
                     </div>
 
                     <div className="flex items-center gap-1">
-                      <img className="h-4" src={Check} alt="" />
-                      <p className="text-sm">In stock</p>
+                      <img className="lg:h-4 h-3" src={Check} alt="" />
+                      <p className="lg:text-sm text-[.75rem]">In stock</p>
                     </div>
                   </div>
                 </div>
