@@ -10,6 +10,7 @@ const Nav = () => {
 
   const checkCart = () => {
     console.log(cart)
+    console.log("clicked")
     setCartVisibility(!cartVisibility)
   }
 
@@ -56,7 +57,7 @@ const Nav = () => {
       </header>
 
       <div className={cartVisibility ? 'hidden' : ''}>
-        <div className="cart absolute right-4 py-2 border shadow-md border-gray-100 rounded-lg w-[22rem] font-Inter bg-white">
+        <div className="cart absolute right-4 py-2 border shadow-md border-gray-100 rounded-lg w-[22rem] font-Inter bg-white z-50">
           <div className="max-h-[21rem] overflow-y-scroll px-6">
             {cart.map((showCart) => {
               const {id, title, price, description, image, } = showCart
