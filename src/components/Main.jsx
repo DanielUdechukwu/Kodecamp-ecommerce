@@ -76,7 +76,7 @@ const Main = () => {
                 
                 return(
                   <div key={id} className="border border-1 rounded-lg p-4 cursor-pointer">
-                    <div className="aspect-h-1 aspect-w-1 lg:w-full h-[15rem] w-3/4 mx-auto overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-60" onClick={() => SinglePage(id)}>
+                    <div className="aspect-h-1 aspect-w-1 lg:w-full h-[20rem] w-3/4 mx-auto overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-60" onClick={() => SinglePage(id)}>
                       <img
                         src={image}
                         alt={description}
