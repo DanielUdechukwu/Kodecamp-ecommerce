@@ -48,12 +48,12 @@ const Cart = () => {
   }
 
   return(
-    <div className="font-Inter h-screen">
+    <div className="font-Inter">
       <h2 className="text-3xl font-bold mt-8 mb-2 md:mb-5 px-4 lg:mb-8 xl:w-[90%] xl:mx-auto">Shopping Cart</h2>
 
       <div className="lg:flex lg:gap-4 lg:px-4 xl:w-[90%] xl:mx-auto">
         <div className="p-4 lg:w-3/4 lg:p-0">
-          <div className="border border-gray-100 rounded-lg max-h-[20rem] lg:max-h-[30rem] overflow-y-scroll scroll-smooth md:w-4/5 md:mx-auto lg:w-full lg:border-0 lg:border-b lg:rounded-none">
+          <div className="border border-gray-100 rounded-lg max-h-[30rem] lg:max-h-[30rem] overflow-y-scroll scroll-smooth md:w-4/5 md:mx-auto lg:w-full lg:border-0 lg:border-b lg:rounded-none">
             {/* map from here */}
             {cart.map((cartItems) => {
               const { id, title, price, category, image} = cartItems
