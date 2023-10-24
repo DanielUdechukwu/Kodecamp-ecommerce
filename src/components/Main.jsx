@@ -5,6 +5,7 @@ import axios from "../api/axios";
 import { useEffect } from "react";
 import { useGlobalContext } from "../context/context";
 import Cancel from "../assets/x-circle.svg"
+import { Oval } from  'react-loader-spinner'
 
 const Main = () => {
   const [isLoading, setIsLoading] =  useState(false)
@@ -64,7 +65,17 @@ const Main = () => {
   return(
     <div className="relative">
       <ToastContainer position="top-center" autoClose={500} />
-      { isLoading ? <p className="text-center">Loading</p> : 
+      { isLoading ? <div className="flex justify-center">
+        <Oval
+          height={40}
+          width={40}
+          color="#4fa94d"
+          visible={true}
+          secondaryColor="#4fa94d"
+          strokeWidth={3}
+          strokeWidthSecondary={2}
+        />
+      </div> : 
         <div className="bg-white font-Inter">
           <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">Available Items</h2>
