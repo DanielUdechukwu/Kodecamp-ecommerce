@@ -6,6 +6,7 @@ import Example from "./components/Main";
 import Cart from "./pages/Cart";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
+import Reset from "./pages/ResetPassword";
 
 const App = () => {
   return(
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
+      <Route path="/resetPassword" element={<Reset />} />
     </Routes>    
   )
 }
