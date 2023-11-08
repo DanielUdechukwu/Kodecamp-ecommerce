@@ -28,12 +28,12 @@ const Nav = () => {
           <h3 className="mr-auto">Komerce</h3>
 
           <div className="ml-auto flex items-center">
-            <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-              <Link to="/signin" className="text-sm font-semibold text-gray-600 hover:text-gray-800">
+            <div className="lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+              <Link to="/signin" className="mr-2 text-sm font-semibold text-gray-600 hover:text-gray-800">
                 Sign in
               </Link>
               <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-              <Link to="/signup" className="text-sm font-semibold text-gray-600 hover:text-gray-800">
+              <Link to="/signup" className="hidden text-sm font-semibold text-gray-600 hover:text-gray-800">
                 Create account
               </Link>
             </div>
